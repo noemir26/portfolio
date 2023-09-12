@@ -1,12 +1,10 @@
-// .cards {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   grid-gap: 16px;
-// }
+.cards {
+  height: 550px;
+}
 
 .card-product {
   overflow: hidden;
-  height: 550px;
+  height: 100vh;
   background: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -21,8 +19,8 @@
   }
 
   h2 {
-    font-size: 64px;
-    font-weight: bold;
+    font-size: 50px;
+    font-weight: 500;
     margin: 0;
   }
 
