@@ -9,7 +9,7 @@
   url: https://www.google.com
 
 - name: BuddyUp
-  description:  Buddy アップ
+  description: A rails app that allows you to find a buddy and an activity. You can create a profile and publish the activity that you would be happy to be part of, or search throught the other users activities to meet up!!
   image: projects/buddy_up.png
   url: https://buddyup-djbrownjr40-85decda596ee.herokuapp.com/
 
