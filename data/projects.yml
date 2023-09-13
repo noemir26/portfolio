@@ -3,17 +3,17 @@
   image: projects/snow_patrol.png
   url: https://snowpatrole-84362fdb7034.herokuapp.com/
 
-- name: Movie Watchlist
-  description: Decent description of the app
-  image: projects/placeholder.png
-  url: https://www.google.com
-
 - name: BuddyUp
   description: A rails app that allows you to find a buddy and an activity. You can create a profile and publish the activity that you would be happy to be part of, or search throught the other users activities to meet up!!
   image: projects/buddy_up.png
   url: https://buddyup-djbrownjr40-85decda596ee.herokuapp.com/
 
-- name: Final project
-  description: Decent description of the app
+- name: Mojito Mojado
+  description: "- Work in progress -"
+  image: projects/placeholder.png
+  url: https://www.google.com
+
+- name: Recipe Cookbook
+  description: "Where I want to show my front-end"
   image: projects/placeholder.png
   url: https://www.google.com
