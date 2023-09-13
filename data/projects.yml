@@ -1,15 +1,15 @@
-- name: Longest Word Game
+- name: Snow Patrol
   description: Decent description of the app
-  image: projects/placeholder.png
-  url: https://www.google.com
+  image: projects/snow_patrol.png
+  url: https://snowpatrole-84362fdb7034.herokuapp.com/
 
 - name: Movie Watchlist
   description: Decent description of the app
   image: projects/placeholder.png
   url: https://www.google.com
 
-- name: Airbnb
-  description: Decent description of the app
+- name: BuddyUp
+  description:  Buddy アップ
   image: projects/placeholder.png
   url: https://www.google.com
 
