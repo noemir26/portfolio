@@ -1,5 +1,5 @@
 - name: Snow Patrol
-  description: Decent description of the app
+  description: A rails app that updates every day the user-made snow reports so that you can find the ski resort that has the best snow for the day. It allows you to leave a snow report as well once you check in the ski resort
   image: projects/snow_patrol.png
   url: https://snowpatrole-84362fdb7034.herokuapp.com/
 
@@ -10,8 +10,8 @@
 
 - name: BuddyUp
   description:  Buddy アップ
-  image: projects/placeholder.png
-  url: https://www.google.com
+  image: projects/buddy_up.png
+  url: https://buddyup-djbrownjr40-85decda596ee.herokuapp.com/
 
 - name: Final project
   description: Decent description of the app
