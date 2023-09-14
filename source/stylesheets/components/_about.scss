@@ -1,0 +1,29 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 330px;
+  margin-top: -285px;
+  width: 65vw;
+
+  #greet {
+    font-size: 80px;
+    text-align: right;
+  }
+}
+
+
+.about-text{
+  display: flex;
+  flex-direction: column;
+
+  #italic {
+    font-size: 32px;
+    text-align: right;
+  }
+
+  .paragraph {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+  }
+}
