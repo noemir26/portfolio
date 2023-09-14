@@ -8,14 +8,116 @@
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "Portfolio" %></title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css">
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
   </head>
   <body>
-    <%= yield %>
+    <header>
+      <nav>
+        <div class="header-top">
+          <a href="#firstSection" class="logo">
+            <img width="178" height="38" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/horizontal-logo-mobile.svg" alt="forecastr logo">
+          </a>
+          <button type="button" class="toggle-menu" aria-label="Toggle Menu">
+            <i></i>
+            <i></i>
+            <i></i>
+          </button>
+        </div>
+
+        <div class="menu-wrapper">
+          <ul class="menu">
+            <li data-menuanchor="firstSection">
+              <a href="#firstSection">First Section</a>
+            </li>
+            <li data-menuanchor="secondSection">
+              <a href="#secondSection">Second Section</a>
+            </li>
+            <li data-menuanchor="thirdSection">
+              <a href="#thirdSection">Third Section</a>
+            </li>
+            <li data-menuanchor="fourthSection">
+              <a href="#fourthSection">Fourth Section</a>
+            </li>
+            <li data-menuanchor="fifthSection">
+              <a href="#fifthSection">First Slide</a>
+            </li>
+            <li data-menuanchor="fifthSection/1">
+              <a href="#fifthSection/1">Second Slide</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div id="fullpage">
+      <section class="vertical-scrolling">
+        <div class="text-block">
+          <h1>fullPage.js Demo v4</h1>
+          <h3>This is the first section</h3>
+          <p>Check original demo with fullPage.js v2 <a href="https://codepen.io/tutsplus/full/VvZXMP/" target="_blank">here</a>
+            </p>
+          <div class="scroll-down">
+            <p>Jump into the last slide</p>
+            <a href="#fifthSection/1">
+              <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                <path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="vertical-scrolling">
+        <div class="text-block">
+          <h2>fullPage.js Demo v4</h2>
+          <h3>This is the second section</h3>
+        </div>
+      </section>
+      <section class="vertical-scrolling">
+        <div class="text-block">
+          <h2>fullPage.js Demo v4</h2>
+          <h3>This is the third section</h3>
+        </div>
+      </section>
+      <section class="vertical-scrolling">
+        <div class="text-block">
+          <h2>fullPage.js Demo v4</h2>
+          <h3>This is the fourth section</h3>
+        </div>
+      </section>
+      <section class="vertical-scrolling">
+        <div class="horizontal-scrolling">
+          <div class="text-block">
+            <h2>fullPage.js Demo v4</h2>
+            <h3>This is the fifth section and it contains the first slide (actually section == first slide)</h3>
+          </div>
+        </div>
+        <div class="horizontal-scrolling">
+          <div class="text-block">
+            <h2>fullPage.js Demo v4</h2>
+            <h3>This is the second slide</h3>
+            <p class="end">Thank you!</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="page-footer">
+      <span>made by </span>
+      <a href="https://georgemartsoukos.com/" target="_blank">
+        <img width="24" height="24" src="https://assets.codepen.io/162656/george-martsoukos-small-logo.svg" alt="George Martsoukos logo">
+      </a>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
+    <script>
+      $('#fullpage').fullpage({
+        sectionSelector: '.vertical-scrolling',
+        slideSelector: '.horizontal-scrolling',
+        controlArrows: false
+        // more options here
+      });
+    </script>
   </body>
 </html>
