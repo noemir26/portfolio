@@ -1,0 +1,16 @@
+<% data.projects.each do |project| %>
+  <div class="horizontal-scrolling">
+    <div class="card-product">
+      <%= image_tag project.image, alt: "project image" %>
+      <div class="card-product-infos w-100">
+        <div class="d-flex justify-content-between align-items-center">
+          <h1><%= project.name %></h1>
+          <% link_to project.url, class: 'external-link', target: '_blank' do %>
+            <i class="fas fa-external-link-alt"></i>
+          <% end %>
+        </div>
+        <p><%= project.description %></p>
+      </div>
+    </div>
+  </div>
+<% end %>

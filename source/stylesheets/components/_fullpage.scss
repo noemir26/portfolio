@@ -1,0 +1,136 @@
+/* RESET-GENERAL STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+/* SECTION STYLES - fullPage.js
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.scroll-down {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  padding: 0 10px;
+  transform: translateX(-50%);
+
+  a {
+    display: inline-block;
+    margin-top: 10px;
+  }
+}
+
+section {
+  text-align: center;
+
+  .text-block {
+    max-width: 1000px;
+    // padding: 0 30px;
+    margin: 0 auto;
+  }
+}
+
+.animated{
+  position: absolute;
+  left: 0;
+  transform: translate3d(-100vw, 0, 0);
+  transition: transform 600ms ease;
+  right: 0;
+}
+.fp-section.active .animated{
+    transform: translate3d(0, 0, 0);
+
+}
+
+/* SLIDENAV STYLES - fullPage.js
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.fp-slidesNav.fp-bottom {
+  bottom: 50px;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: rgb(0, 0, 0);
+  width: 8px;
+  height: 8px;
+  margin: -4px 0 0 -4px;
+}
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+  width: 16px;
+  height: 16px;
+  margin: -8px 0 0 -8px;
+  background: transparent;
+  box-sizing: border-box;
+  border: 1px solid #24221f;
+}
+
+/* MQ STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 767px) {
+  .menu-wrapper ul {
+    flex-direction: column;
+  }
+
+  .menu-wrapper li {
+    margin-top: 1px;
+  }
+
+  .menu-wrapper li a {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 70%;
+  }
+
+  .header-top.open-menu ~ .menu-wrapper {
+    padding: 20px 0;
+  }
+
+  .menu-wrapper li a {
+    padding: 15px;
+  }
+}
+
+/* FOOTER STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer {
+  position: fixed;
+  right: 0;
+  bottom: 50px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background: white;
+}
+
+.page-footer a {
+  display: flex;
+  margin-left: 4px;
+}
