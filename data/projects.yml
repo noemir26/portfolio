@@ -2,6 +2,7 @@
   description: A rails app that updates every day the user-made snow reports so that you can find the ski resort that has the best snow for the day. It allows you to leave a snow report as well once you check in the ski resort
   image: projects/snow_patrol.png
   url: https://snowpatrole-84362fdb7034.herokuapp.com/
+  class: snow
 
 - name: BuddyUp
   description: A rails app that allows you to find a buddy and an activity. You can create a profile and publish the activity that you would be happy to be part of, or search throught the other users activities to meet up!!

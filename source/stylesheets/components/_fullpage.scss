@@ -184,16 +184,6 @@ section h3 + p {
   margin-top: 20px;
 }
 
-section .end {
-  margin-top: 30px;
-  font-size: 2.8em;
-  font-weight: bold;
-  opacity: 0;
-  transform: translateY(300px);
-  transition: opacity, transform 1s;
-  transition-delay: 1s;
-}
-
 section p a {
   text-decoration: underline;
 }
@@ -206,7 +196,7 @@ section p a {
 
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-  background: white;
+  background: rgb(0, 0, 0);
   width: 8px;
   height: 8px;
   margin: -4px 0 0 -4px;

@@ -20,12 +20,7 @@
     <div id="fullpage">
       <section class="vertical-scrolling">
         <div class="text-block">
-          <div class="row justify-content-center banner">
-            <div class="col-12 d-flex flex-column justify-content-center align-items-center h-100">
-              <%= image_tag 'placeholder.png', alt: "profile photo", class: 'avatar' %>
-              <h1 class="title-main">Portfolio</h1>
-            </div>
-          </div>
+          <%= partial 'partials/banner' %>
           <div class="scroll-down">
             <p>
               <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
@@ -37,45 +32,16 @@
       </section>
       <section class="vertical-scrolling">
         <div class="text-block">
-          <div id="about">
-            <h2>About me</h2>
-            <p>I'm Noemí 🪷</p>
-          </div>
+            <%= partial 'partials/about' %>
         </div>
       </section>
       <section class="vertical-scrolling">
         <div class="horizontal-scrolling">
-          <div class="text-block">
-            <div id="projects">
-              <h2> Projects</h2>
-              <ul class="cards">
-                <% data.projects.each do |project| %>
-                  <li>
-                    <div class="card-product">
-                      <%= image_tag project.image, alt: "project image" %>
-                      <div class="card-product-infos w-100">
-                        <div class="d-flex justify-content-between align-items-center">
-                          <h2><%= project.name %></h2>
-                          <% link_to project.url, class: 'external-link', target: '_blank' do %>
-                            <i class="fas fa-external-link-alt"></i>
-                          <% end %>
-                        </div>
-                        <p><%= project.description %></p>
-                      </div>
-                    </div>
-                  </li>
-                <% end %>
-              </ul>
-            </div>
+          <div class="text-block" id="projects">
+            <h2>Projects</h2>
           </div>
         </div>
-        <div class="horizontal-scrolling">
-          <div class="text-block">
-            <h2>fullPage.js Demo v4</h2>
-            <h3>This is the second slide</h3>
-            <p class="end">Thank you!</p>
-          </div>
-        </div>
+        <%= partial 'partials/projects' %>
       </section>
     </div>
     <footer class="page-footer">
@@ -86,7 +52,7 @@
       $('#fullpage').fullpage({
         sectionSelector: '.vertical-scrolling',
         slideSelector: '.horizontal-scrolling',
-        controlArrows: false
+        controlArrows: true
         // more options here
       });
     </script>
