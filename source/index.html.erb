@@ -1,10 +1,57 @@
-<div class="container ">
-  <!-- Banner Section -->
-  <%= partial 'partials/banner' %>
-  <!-- About Section -->
-  <%= partial 'partials/about' %>
-  <!-- Projects Section -->
-  <%= partial 'partials/projects' %>
-  <!-- Social Links Section -->
-  <%= partial 'partials/social' %>
+<div id="fullpage">
+    <!-- Banner Slide -->
+    <div class="vertical-scrolling">
+      <div class="section home row justify-content-center banner">
+        <div class="col-12 d-flex flex-column justify-content-center align-items-center h-100">
+          <%= image_tag 'placeholder.png', alt: "profile photo", class: 'avatar' %>
+          <h1 class="title-main">Portfolio</h1>
+        </div>
+      </div>
+    </div>
+    <!-- About Slide -->
+    <div class="vertical-scrolling">
+      <div class="section about_me row my-5">
+        <div class="col-12">
+          <div class="container">
+            <div id="about">
+              <h2>About me</h2>
+              <p>I'm Noemí 🪷</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Projects Slide -->
+    <div class="vertical-scrolling">
+      <div class="section proyectos row my-5">
+        <div class="col-12">
+          <div class="container">
+            <div id="projects">
+              <h2> Projects</h2>
+              <ul class="cards">
+                <% data.projects.each do |project| %>
+                  <li>
+                    <div class="card-product">
+                      <%= image_tag project.image, alt: "project image" %>
+                      <div class="card-product-infos w-100">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h2><%= project.name %></h2>
+                          <% link_to project.url, class: 'external-link', target: '_blank' do %>
+                            <i class="fas fa-external-link-alt"></i>
+                          <% end %>
+                        </div>
+                        <p><%= project.description %></p>
+                      </div>
+                    </div>
+                  </li>
+                <% end %>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Social Links Slide -->
+    <%= partial 'partials/social' %>
+    <%= partial 'partials/menu' %>
 </div>
