@@ -1,12 +1,6 @@
 /* RESET-GENERAL STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 a {
   text-decoration: none;
   color: white;
@@ -39,7 +33,7 @@ li {
   }
 }
 
-section {
+.section {
   text-align: center;
 
   .text-block {
@@ -49,19 +43,22 @@ section {
   }
 }
 
+#section1, #section2, #section3 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 #section1 {
   background-image: url('../images/top.png');
-  background-size: cover;
 }
 
 #section2 {
   background-image: url('../images/middle.png');
-  background-size: cover;
 }
 
 #section3 {
   background-image: url('../images/bottom.png');
-  background-size: cover;
 }
 
 .animated{
@@ -105,6 +102,12 @@ section {
 /* MQ STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+@media screen and (max-width: 1370px) {
+  #section1, #section2, #section3 {
+    background-size: cover;
+    background-position: center left;
+  }
+}
 @media screen and (max-width: 767px) {
   .menu-wrapper ul {
     flex-direction: column;
@@ -135,17 +138,17 @@ section {
 
 /* FOOTER STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.page-footer {
-  position: fixed;
-  right: 0;
-  bottom: 50px;
-  display: flex;
-  align-items: center;
-  padding: 5px;
-  background: white;
-}
+// .page-footer {
+//   position: fixed;
+//   right: 0;
+//   bottom: 50px;
+//   display: flex;
+//   align-items: center;
+//   padding: 5px;
+//   background: white;
+// }
 
-.page-footer a {
-  display: flex;
-  margin-left: 4px;
-}
+// .page-footer a {
+//   display: flex;
+//   margin-left: 4px;
+// }
