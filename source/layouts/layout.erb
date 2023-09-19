@@ -23,9 +23,7 @@
           </span>
           <div class="scroll-down">
             <p>
-              <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
-                <path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z" />
-              </svg>
+              <i class="fa-solid fa-chevron-down" style="color: #fcfcfc;"></i>
             </p>
           </div>
         </div>
@@ -37,8 +35,14 @@
       </section>
       <section class="vertical-scrolling" id="section3">
         <div class="horizontal-scrolling">
+          <div class="custom-prev-arrow">
+            <i class="fa-solid fa-chevron-left" style="color: #fcfcfc;"></i>
+          </div>
           <div class="text-block">
             <h1 id="word-projects">Projects</h1>
+          </div>
+          <div class="custom-next-arrow">
+            <i class="fa-solid fa-chevron-right" style="color: #fcfcfc;"></i>
           </div>
         </div>
         <%= partial 'partials/projects' %>
@@ -50,8 +54,16 @@
       $('#fullpage').fullpage({
         sectionSelector: '.vertical-scrolling',
         slideSelector: '.horizontal-scrolling',
-        controlArrows: true
-        // more options here
+      });
+
+      // Previous Arrow Click Handler
+      $('.custom-prev-arrow').click(function() {
+        $.fn.fullpage.moveSlideLeft();
+      });
+
+      // Next Arrow Click Handler
+      $('.custom-next-arrow').click(function() {
+        $.fn.fullpage.moveSlideRight();
       });
     </script>
   </body>
