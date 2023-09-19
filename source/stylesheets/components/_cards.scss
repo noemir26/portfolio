@@ -9,7 +9,7 @@
   /* Position the previous arrow on the left side */
   position: absolute;
   left: 20px; /* Adjust the left position as needed */
-  top: 10%; /* Center vertically */
+  top: 50%; /* Center vertically */
   transform: translateY(-50%); /* Move the element up by 50% of its own height */
 }
 
@@ -17,7 +17,7 @@
   /* Position the next arrow on the right side */
   position: absolute;
   right: 20px; /* Adjust the right position as needed */
-  top: 10%; /* Center vertically */
+  top: 50%; /* Center vertically */
   transform: translateY(-50%); /* Move the element up by 50% of its own height */
 }
 
