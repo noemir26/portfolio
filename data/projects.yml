@@ -15,7 +15,7 @@
   image: projects/placeholder.png
   url: https://www.google.com
 
-- name: Recipe Cookbook
-  description: "Where I want to show my front-end"
-  image: projects/placeholder.png
-  url: https://www.google.com
+# - name: Recipe Cookbook
+#   description: "Where I want to show my front-end"
+#   image: projects/placeholder.png
+#   url: https://www.google.com
