@@ -2,11 +2,11 @@
   <div class="horizontal-scrolling">
     <div class="card-product" style="background-color: <%= project.bg || "#222222"%>">
       <%= image_tag project.image, alt: "project image" %>
-      <div class="card-product-infos w-100">
-        <div class="d-flex justify-content-between align-items-center">
+      <div class="card-product-infos">
+        <div class="d-flex justify-content-center align-items-center">
           <h1><%= project.name %></h1>
           <% link_to project.url, class: 'external-link', target: '_blank' do %>
-            <i class="fas fa-external-link-alt"></i>
+            <i class="fa-solid fa-arrow-up-right-from-square" style="color: #fcfcfc;"></i>
           <% end %>
         </div>
         <p><%= project.description %></p>
