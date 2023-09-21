@@ -16,6 +16,20 @@ ul,
 li {
   list-style-type: none;
 }
+/* MENU STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 12;
+  background: rgba(0, 47, 77, 0.3);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 /* SECTION STYLES - fullPage.js
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
