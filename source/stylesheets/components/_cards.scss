@@ -1,26 +1,3 @@
-.custom-prev-arrow,
-.custom-next-arrow {
-  width: 40px; /* Set the width and height as needed */
-  height: 40px;
-  cursor: pointer; /* Add a pointer cursor to indicate interactivity */
-}
-
-.custom-prev-arrow {
-  /* Position the previous arrow on the left side */
-  position: absolute;
-  left: 20px; /* Adjust the left position as needed */
-  top: 50%; /* Center vertically */
-  transform: translateY(-50%); /* Move the element up by 50% of its own height */
-}
-
-.custom-next-arrow {
-  /* Position the next arrow on the right side */
-  position: absolute;
-  right: 20px; /* Adjust the right position as needed */
-  top: 50%; /* Center vertically */
-  transform: translateY(-50%); /* Move the element up by 50% of its own height */
-}
-
 .card-product {
   height: 100vh;
   width: 100vw;

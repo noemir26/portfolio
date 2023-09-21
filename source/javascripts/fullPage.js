@@ -1,4 +1,3 @@
-// FOR THE FULL PAGE SCROLLING
 // variables
 const headerTop = document.querySelector(".header-top");
 const toggleMenuLink = headerTop.querySelector(".toggle-menu");
