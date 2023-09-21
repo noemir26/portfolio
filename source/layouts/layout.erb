@@ -18,26 +18,26 @@
     <header>
       <nav>
             <ul class="menu">
-              <li data-menuanchor="firstSection">
-                <a href="#firstSection">First Section</a>
+              <li data-menuanchor="home">
+                <a href="#home">Home</a>
               </li>
-              <li data-menuanchor="secondSection">
-                <a href="#secondSection">Second Section</a>
+              <li data-menuanchor="story">
+                <a href="#story">My Story</a>
               </li>
-              <li data-menuanchor="thirdSection">
-                <a href="#thirdSection">Third Section</a>
+              <li data-menuanchor="projects">
+                <a href="#projects">Projects</a>
               </li>
-              <li data-menuanchor="fourthSection">
-                <a href="#fourthSection">Fourth Section</a>
+              <li data-menuanchor="about">
+                <a href="#about">About me</a>
               </li>
-              <li data-menuanchor="fifthSection">
-                <a href="#fifthSection">First Slide</a>
+              <li data-menuanchor="contact">
+                <a href="#contact">Contact</a>
               </li>
             </ul>
       </nav>
     </header>
     <div id="fullpage">
-      <section class="vertical-scrolling"  id="section1" data-anchor="firstSection">
+      <section class="vertical-scrolling"  id="section1" data-anchor="home">
         <div class="text-block d-flex justify-content-center align-items-center">
           <span class="animated">
             <%= partial 'partials/banner' %>
@@ -49,23 +49,23 @@
           </div>
         </div>
       </section>
-      <section class="vertical-scrolling" id="section2" data-anchor="secondSection">
+      <section class="vertical-scrolling" id="section2" data-anchor="story">
           <span class="animated">
             <%= partial 'partials/about' %>
           </span>
       </section>
-      <section class="vertical-scrolling" id="section3"data-anchor="thirdSection">
+      <section class="vertical-scrolling" id="section3"data-anchor="projects">
         <div class="text-block">
           <h1 id="word-projects">Projects</h1>
         </div>
       </section>
       <%= partial 'partials/projects' %>
-      <section class="vertical-scrolling" id="section4" data-anchor="fourthSection">
+      <section class="vertical-scrolling" id="section4" data-anchor="about">
         <div class="text-block">
           <h1>Random</h1>
         </div>
       </section>
-      <section class="vertical-scrolling" id="section5" data-anchor="fifthSection">
+      <section class="vertical-scrolling" id="section5" data-anchor="contact">
         <%= partial 'partials/contact' %>
       </section>
     </div>

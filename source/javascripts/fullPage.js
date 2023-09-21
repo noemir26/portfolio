@@ -22,11 +22,11 @@ new fullpage("#fullpage", {
   scrollOverflow: false,
   controlArrows: false,
   anchors: [
-    "firstSection",
-    "secondSection",
-    "thirdSection",
-    "fourthSection",
-    "fifthSection"
+    "home",
+    "story",
+    "projects",
+    "about",
+    "contact"
   ],
   menu: ".menu",
 
@@ -44,31 +44,31 @@ new fullpage("#fullpage", {
     }
   },
 
-  afterSlideLoad: function (section, origin, destination, direction, trigger) {
-    console.log(origin.index, destination.index);
-    if (section.anchor == "fifthSection" && destination.index == 1) {
-      fullpage_api.setAllowScrolling(false, "up");
-      fullpage_api.setKeyboardScrolling(false, "up");
-      headerTop.style.background = "transparent";
-      menuWrapper.style.background = "transparent";
-      const activeSlide = section.item.querySelector(".fp-slide.active");
-      activeSlide.style.background = "#374140";
-      activeSlide.querySelector("h2").style.color = "white";
-      activeSlide.querySelector("h3").style.color = "white";
-      activeSlide.querySelector("p").style.cssText = `
-        color: #DC3522;
-        opacity: 1;
-        transform: translateY(0);
-      `;
-    }
-  },
+  // afterSlideLoad: function (section, origin, destination, direction, trigger) {
+  //   console.log(origin.index, destination.index);
+  //   if (section.anchor == "contact" && destination.index == 1) {
+  //     fullpage_api.setAllowScrolling(false, "up");
+  //     fullpage_api.setKeyboardScrolling(false, "up");
+  //     headerTop.style.background = "transparent";
+  //     menuWrapper.style.background = "transparent";
+  //     const activeSlide = section.item.querySelector(".fp-slide.active");
+  //     activeSlide.style.background = "#374140";
+  //     activeSlide.querySelector("h2").style.color = "white";
+  //     activeSlide.querySelector("h3").style.color = "white";
+  //     activeSlide.querySelector("p").style.cssText = `
+  //       color: #DC3522;
+  //       opacity: 1;
+  //       transform: translateY(0);
+  //     `;
+  //   }
+  // },
 
-  onSlideLeave: function (section, origin, destination, direction, trigger) {
-    if (section.anchor == "fifthSection" && origin.index == 1) {
-      fullpage_api.setAllowScrolling(true, "up");
-      fullpage_api.setKeyboardScrolling(true, "up");
-      headerTop.style.background = headerTopColor;
-      menuWrapper.style.background = menuWrapperColor;
-    }
-  }
+  // onSlideLeave: function (section, origin, destination, direction, trigger) {
+  //   if (section.anchor == "contact" && origin.index == 1) {
+  //     fullpage_api.setAllowScrolling(true, "up");
+  //     fullpage_api.setKeyboardScrolling(true, "up");
+  //     headerTop.style.background = headerTopColor;
+  //     menuWrapper.style.background = menuWrapperColor;
+  //   }
+  // }
 });
