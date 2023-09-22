@@ -3,12 +3,14 @@
   image: projects/snow_patrol.png
   url: https://snowpatrole-84362fdb7034.herokuapp.com/
   bg: "#6D738D"
+  data_anchor: snowpatrol
 
 - name: BuddyUp
   description: Find a buddy who's open to go on adventures with you!
   image: projects/buddy_up.png
   url: https://buddyup-djbrownjr40-85decda596ee.herokuapp.com/
   bg: "#C69FB6"
+  data_anchor: buddyup
 
 - name: Mojito Mojado
   description: "- Work in progress -"

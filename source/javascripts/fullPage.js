@@ -25,7 +25,9 @@ new fullpage("#fullpage", {
     "story",
     "projects",
     "about",
-    "contact"
+    "contact",
+    "snowpatrol",
+    "buddyup"
   ],
   menu: ".menu",
 
