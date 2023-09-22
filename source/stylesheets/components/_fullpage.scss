@@ -25,7 +25,7 @@ li {
   width: 100%;
   height: 70px;
   z-index: 12;
-  background: rgba(0, 47, 77, 0.3);
+  background: rgba(0, 47, 77, 0);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -123,15 +123,15 @@ li {
   }
 }
 @media screen and (max-width: 767px) {
-  .menu-wrapper ul {
+  .menu ul {
     flex-direction: column;
   }
 
-  .menu-wrapper li {
+  .menu li {
     margin-top: 1px;
   }
 
-  .menu-wrapper li a {
+  .menu li a {
     font-size: 1.5em;
   }
 }
@@ -141,11 +141,11 @@ li {
     font-size: 70%;
   }
 
-  .header-top.open-menu ~ .menu-wrapper {
+  .menu {
     padding: 20px 0;
   }
 
-  .menu-wrapper li a {
+  .menu li a {
     padding: 15px;
   }
 }

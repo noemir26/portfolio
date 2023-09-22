@@ -35,23 +35,23 @@
 .card-product .card-product-infos {
   padding: 16px;
   width: 40vw;
-  &:hover {
-    .external-link {
-      opacity: 1;
-    }
-  }
+  // &:hover {
+  //   .external-link {
+  //     opacity: 1;
+  //   }
+  // }
 }
 
-.external-link {
-  margin-left: 8px;
-  opacity: 0;
-  color: $gray;
-  transition: opacity 1s;
-  &:hover {
-    cursor: pointer;
-    color: $gray
-  }
-}
+// .external-link {
+//   margin-left: 8px;
+//   color: $gray;
+//   opacity: 0;
+//   transition: opacity 1s;
+//   &:hover {
+//     cursor: pointer;
+//     color: $gray
+//   }
+// }
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
