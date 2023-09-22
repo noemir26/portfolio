@@ -31,6 +31,17 @@ li {
   align-items: center;
 }
 
+.menu-border {
+  position: fixed;
+  top: 0;
+  left: 5vw;
+  width: 90%;
+  height: 70px;
+  z-index: 12;
+  background: rgba(0, 47, 77, 0);
+  border-bottom: 1px solid $light-gray;
+}
+
 /* SECTION STYLES - fullPage.js
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
