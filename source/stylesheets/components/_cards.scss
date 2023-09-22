@@ -4,8 +4,8 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-left: 55px;
-  padding-right: 55px;
+  padding-left: 65px;
+  padding-right: 65px;
   color: $light-gray;
   background-color: rgba(0, 0, 0, 0);
 
@@ -21,7 +21,7 @@
   width: 40vw;
 
   h1 {
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 500;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -34,22 +34,7 @@
     opacity: .7;
     margin-bottom: 0;
     margin-top: 8px;
-  }
-}
-
-.card-product .card-product-infos-right{
-  h1 {
-  }
-  p {
     text-align: left;
-  }
-}
-.card-product .card-product-infos-left {
-
-  h1 {
-  }
-  p {
-    text-align: right;
   }
 }
 

@@ -1,16 +1,18 @@
 - name: Snow Patrol
   description: Every day updates on the snow condition by user-made snow reports.
+  context: Made togheter with 3 other developers, all of them based in Tokyo. In just 10 days, we achieved a fully functional app, with a nice design and a lot of features.
+  stack: It was developed using Ruby on Rails, HTML, CSS, JavaScript, PostgreSQL, Heroku, Git and GitHub. My main tasks were geocoding and styling both the map, with its markers, and the ski resorts cards.
   image: projects/snow_patrol.png
   url: https://snowpatrole-84362fdb7034.herokuapp.com/
-  bg: "#6D738D"
   data_anchor: snowpatrol
   index: 1
 
 - name: BuddyUp
   description: Find a buddy who's open to go on adventures with you!
+  context: This was my first project as a developer. I worked on it with 3 other developers, all of them based in Tokyo. We had 5 days to develop it, and we did it! It was a great experience and I learned a lot from it.
+  stack: It was developed using Ruby on Rails, HTML, CSS, JavaScript, PostgreSQL, Heroku, Git and GitHub. My main tasks were the styling of the individual activity page and the creation of the bookings and reviews.
   image: projects/buddy_up.png
   url: https://buddyup-djbrownjr40-85decda596ee.herokuapp.com/
-  bg: "#C69FB6"
   data_anchor: buddyup
   index: 2
 

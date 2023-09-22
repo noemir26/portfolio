@@ -10,18 +10,22 @@
             <% end %>
           </div>
           <p><%= project.description %></p>
+          <p><%= project.context %></p>
+          <p><%= project.stack %></p>
         </div>
         <%= image_tag project.image, alt: "project image" %>
       <% else %>
         <%= image_tag project.image, alt: "project image" %>
         <div class="card-product-infos-left">
-          <div class="d-flex justify-content-end align-items-center">
+          <div class="d-flex justify-content-start align-items-center">
             <h1><%= project.name %></h1>
             <% link_to project.url, target: '_blank' do %>
               <i class="fa-solid fa-arrow-up-right-from-square" style="color: #fcfcfc;"></i>
             <% end %>
           </div>
           <p><%= project.description %></p>
+          <p><%= project.context %></p>
+          <p><%= project.stack %></p>
         </div>
       <% end %>
     </div>
