@@ -1,25 +1,31 @@
 .card-product {
   height: 100vh;
   width: 100vw;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-left: 55px;
   padding-right: 55px;
   color: $light-gray;
   background-color: rgba(0, 0, 0, 0);
 
   img {
-    height: 80vh;
-    width: 80vh;
+    height: 55vh;
+    width: 55vh;
     object-fit: cover;
   }
+}
+
+.card-product .card-product-infos-right, .card-product-infos-left {
+  padding: 16px;
+  width: 40vw;
 
   h1 {
     font-size: 50px;
     font-weight: 500;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
   }
 
   p {
@@ -28,18 +34,23 @@
     opacity: .7;
     margin-bottom: 0;
     margin-top: 8px;
-    text-align: left;
   }
 }
 
-.card-product .card-product-infos {
-  padding: 16px;
-  width: 40vw;
-  // &:hover {
-  //   .external-link {
-  //     opacity: 1;
-  //   }
-  // }
+.card-product .card-product-infos-right{
+  h1 {
+  }
+  p {
+    text-align: left;
+  }
+}
+.card-product .card-product-infos-left {
+
+  h1 {
+  }
+  p {
+    text-align: right;
+  }
 }
 
 // .external-link {

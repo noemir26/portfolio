@@ -4,6 +4,7 @@
   url: https://snowpatrole-84362fdb7034.herokuapp.com/
   bg: "#6D738D"
   data_anchor: snowpatrol
+  index: 1
 
 - name: BuddyUp
   description: Find a buddy who's open to go on adventures with you!
@@ -11,6 +12,7 @@
   url: https://buddyup-djbrownjr40-85decda596ee.herokuapp.com/
   bg: "#C69FB6"
   data_anchor: buddyup
+  index: 2
 
 # - name: Mojito Mojado
 #   description: "- Work in progress -"
