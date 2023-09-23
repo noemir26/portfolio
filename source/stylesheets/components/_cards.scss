@@ -14,11 +14,32 @@
     width: 55vh;
     object-fit: cover;
   }
+
 }
 
 .card-product .card-product-infos-right, .card-product-infos-left {
   padding: 16px;
   width: 40vw;
+
+  .stack-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+  }
+
+  .stack-list .stack-img {
+    height: 35px;
+    width: 35px;
+    opacity: 0.8;
+    &:hover {
+      opacity: 1;
+      height: 45px;
+      width: 45px;
+      transition: all 0.3s;
+    }
+  }
 
   h1 {
     font-size: 60px;
@@ -46,6 +67,7 @@
     transition: opacity 0.3s;
   }
 }
+
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
