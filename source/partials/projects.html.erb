@@ -5,8 +5,8 @@
         <div class="card-product-infos-right">
           <div class="d-flex justify-content-start align-items-center">
             <h1><%= project.name %></h1>
-            <% link_to project.url, target: '_blank' do %>
-              <i class="fa-solid fa-arrow-up-right-from-square" style="color: #fcfcfc;"></i>
+            <% link_to project.url, class: "square-link", target: '_blank' do %>
+              <i class="fa-solid fa-arrow-up-right-from-square" style="color: #FFDE68;"></i>
             <% end %>
           </div>
           <p><%= project.description %></p>
@@ -19,8 +19,8 @@
         <div class="card-product-infos-left">
           <div class="d-flex justify-content-start align-items-center">
             <h1><%= project.name %></h1>
-            <% link_to project.url, target: '_blank' do %>
-              <i class="fa-solid fa-arrow-up-right-from-square" style="color: #fcfcfc;"></i>
+            <% link_to project.url, class: "square-link", target: '_blank' do %>
+              <i class="fa-solid fa-arrow-up-right-from-square" style="color: #FFDE68;"></i>
             <% end %>
           </div>
           <p><%= project.description %></p>

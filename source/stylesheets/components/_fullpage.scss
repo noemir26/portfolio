@@ -3,7 +3,10 @@
 
 a {
   text-decoration: none;
-  color: white;
+  color: $blue;
+  &:hover {
+    color: $yellow;
+  }
 }
 
 button {
@@ -29,6 +32,7 @@ li {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  color: $blue;
 }
 
 .menu-border {
@@ -39,7 +43,7 @@ li {
   height: 70px;
   z-index: 12;
   background: rgba(0, 47, 77, 0);
-  border-bottom: 1px solid $light-gray;
+  border-bottom: 1px solid $blue;
 }
 
 /* SECTION STYLES - fullPage.js
@@ -74,17 +78,17 @@ li {
   background-position: center center;
 }
 
-#section1 {
-  background-image: url('../images/top.png');
-}
+// #section1 {
+//   background-image: url('../images/top.png');
+// }
 
-#section2 {
-  background-image: url('../images/middle.png');
-}
+// #section2 {
+//   background-image: url('../images/middle.png');
+// }
 
-#section3 {
-  background-image: url('../images/bottom.png');
-}
+// #section3 {
+//   background-image: url('../images/bottom.png');
+// }
 
 .animated{
   position: absolute;
