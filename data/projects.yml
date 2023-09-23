@@ -16,10 +16,14 @@
   data_anchor: buddyup
   index: 2
 
-# - name: Mojito Mojado
-#   description: "- Work in progress -"
-#   image: projects/placeholder.png
-#   url: https://www.google.com
+- name: Portfolio
+  description: "- Work in progress -"
+  context: I'm currently working on my portfolio. I'm using it as a way to learn new technologies and to improve my skills.
+  stack: It's being developed using Middleman, Javascript, JQuery, HTML, CSS, Git and GitHub.
+  image: projects/placeholder.png
+  url: https://www.google.com
+  data_anchor: portfolio
+  index: 3
 
 # - name: Recipe Cookbook
 #   description: "Where I want to show my front-end"
