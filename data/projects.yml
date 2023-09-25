@@ -1,7 +1,7 @@
 - name: Snow Patrol
   description: Every day updates on the snow condition by user-made snow reports.
   context: Made togheter with 3 other developers, all of them based in Tokyo. In just 10 days, we achieved a fully functional app, with a nice design and a lot of features.
-  stack: It was developed using Ruby on Rails, HTML, CSS, JavaScript, PostgreSQL, Heroku, Git and GitHub. My main tasks were geocoding and styling both the map, with its markers, and the ski resorts cards.
+  stacks: [ruby, rails, html, css, javascript, sass, git, github, heroku, postgresql, database, figma]
   image: projects/snow_patrol.png
   url: https://snowpatrole-84362fdb7034.herokuapp.com/
   data_anchor: snowpatrol
@@ -10,7 +10,7 @@
 - name: BuddyUp
   description: Find a buddy who's open to go on adventures with you!
   context: This was my first project as a developer. I worked on it with 3 other developers, all of them based in Tokyo. We had 5 days to develop it, and we did it! It was a great experience and I learned a lot from it.
-  stack: It was developed using Ruby on Rails, HTML, CSS, JavaScript, PostgreSQL, Heroku, Git and GitHub. My main tasks were the styling of the individual activity page and the creation of the bookings and reviews.
+  stacks: [ruby, rails, html, css, javascript, sass, git, github, heroku, postgresql, database, figma]
   image: projects/buddy_up.png
   url: https://buddyup-djbrownjr40-85decda596ee.herokuapp.com/
   data_anchor: buddyup
@@ -19,7 +19,7 @@
 - name: Portfolio
   description: "- Work in progress -"
   context: I'm currently working on my portfolio. I'm using it as a way to learn new technologies and to improve my skills.
-  stack: It's being developed using Middleman, Javascript, JQuery, HTML, CSS, Git and GitHub.
+  stacks: [ruby, middleman, html, css, javascript, sass, git, github, netlify, canva]
   image: projects/placeholder.png
   url: https://www.google.com
   data_anchor: portfolio
