@@ -30,3 +30,15 @@ p {
   font-size: 24px;
   color: $dark-gray;
 }
+
+@media screen and (max-width: 767px) {
+  #word-projects {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #word-projects {
+    font-size: 64px;
+  }
+}
