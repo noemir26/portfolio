@@ -72,23 +72,31 @@ li {
   }
 }
 
-#section1, #section2, #section3 {
+#section1, #section2, #section3, #section4, #section5 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-// #section1 {
-//   background-image: url('../images/top.png');
-// }
+#section1 {
+  background-image: url('../images/bg/white_bg1.png');
+}
 
-// #section2 {
-//   background-image: url('../images/middle.png');
-// }
+#section2 {
+  background-image: url('../images/bg/white_bg2.png');
+}
 
-// #section3 {
-//   background-image: url('../images/bottom.png');
-// }
+#section3 {
+  background-image: url('../images/bg/white_bg3.png');
+}
+
+#section4 {
+  background-image: url('../images/bg/white_bg4.png');
+}
+
+#section5 {
+  background-image: url('../images/bg/white_bg5.png');
+}
 
 .animated{
   position: absolute;
@@ -132,7 +140,7 @@ li {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @media screen and (max-width: 1370px) {
-  #section1, #section2, #section3 {
+  #section1, #section2, #section3, #section4, #section5 {
     background-size: cover;
     background-position: center left;
   }
