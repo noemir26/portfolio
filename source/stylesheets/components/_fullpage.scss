@@ -146,30 +146,30 @@ li {
   }
 }
 @media screen and (max-width: 767px) {
-  .menu ul {
-    flex-direction: column;
-  }
+  // .menu ul {
+  //   flex-direction: column;
+  // }
 
-  .menu li {
-    margin-top: 1px;
-  }
+  // .menu li {
+  //   margin-top: 1px;
+  // }
 
   .menu li a {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 }
 
 @media screen and (max-width: 400px) {
-  html {
-    font-size: 70%;
+  // html {
+  //   // font-size: 70%;
+  // }
+
+  .menu{
+    font-size: 12px;
   }
 
-  .menu {
-    padding: 20px 0;
-  }
-
-  .menu li a {
-    padding: 15px;
+  .menu li {
+    margin-right: 4px;
   }
 }
 
