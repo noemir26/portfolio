@@ -18,9 +18,9 @@
             <% end %>
           </div>
         </div>
-        <%= image_tag project.image, alt: "project image" %>
+        <%= image_tag project.image, alt: "project image", class: "p-img" %>
       <% else %>
-        <%= image_tag project.image, alt: "project image" %>
+        <%= image_tag project.image, alt: "project image", class: "p-img" %>
         <div class="card-product-infos-left">
           <div class="d-flex justify-content-start align-items-center">
             <h1><%= project.name %></h1>

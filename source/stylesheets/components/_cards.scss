@@ -6,10 +6,9 @@
   justify-content: space-around;
   padding-left: 65px;
   padding-right: 65px;
-  color: $light-gray;
   background-color: rgba(0, 0, 0, 0);
 
-  img {
+  .p-img {
     height: 55vh;
     width: 55vh;
     object-fit: cover;
@@ -18,7 +17,6 @@
 }
 
 .card-product .card-product-infos-right, .card-product-infos-left {
-  padding: 16px;
   width: 40vw;
 
   .stack-list {
@@ -69,46 +67,57 @@
 }
 
 
-// Smallest device
-@media (min-width: 100px) and (max-width: 575px) {
-  .cards {
-    grid-template-columns: 1fr;
+// Medium devices
+@media (max-width: 890px) {
+  .card-product {
+    .p-img {
+      height: 40vh;
+      width: 40vh;
+    }
   }
-  .external-link {
-    opacity: 1;
+
+  .card-product .card-product-infos-right, .card-product-infos-left {
+    width: 100%;
+    p {
+      font-size: 20px;
+    }
   }
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-  .cards {
-    grid-template-columns: 1fr;
-  }
-  .external-link {
-    opacity: 1;
-  }
-}
+// Small devices
+@media (max-width: 780px) {
+  .card-product {
+    flex-direction: column;
+    padding: 72px;
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-  .cards {
-    grid-template-columns: 1fr 1fr;
+    .p-img {
+      height: 30vh;
+      width: 30vh;
+      margin-top: 15px;
+    }
   }
-  .external-link {
-    opacity: 0;
-  }
-}
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-  .cards {
-    grid-template-columns: 1fr 1fr;
-  }
-}
+  .card-product .card-product-infos-right, .card-product-infos-left {
+    width: 85vw;
+    flex-grow: 1;
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-  .cards {
-    grid-template-columns: 1fr 1fr;
+    .stack-list {
+      margin-top: 7px;
+      align-items: center;
+      height: 50px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 7px;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+    }
   }
 }
