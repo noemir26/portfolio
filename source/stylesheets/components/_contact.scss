@@ -7,14 +7,57 @@
     font-size: 32px;
     font-weight: 500;
   }
-  .contact-card{
+
+  .contact-box{
     display: flex;
+    justify-content: space-around;
+
+    .contact-card{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 20vw;
+    }
+
+    .contact-card .icon {
+      font-size: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .contact {
+    margin-left: 40px;
+    margin-right: 40px;
+
+    .contact-box .contact-card .icon {
+      font-size: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact {
+    .contact-title {
+      font-size: 20px;
+    }
+
+    .contact-box{
     flex-direction: column;
     align-items: center;
-    width: 20vw;
-  }
 
-  .contact-card .icon {
-    font-size: 30px;
+    .contact-card p{
+      font-size: 30px;
+    }
+
+
+    .contact-card {
+      width: 75vw;
+      margin-bottom: 10px;
+    }
+    .contact-card .icon {
+      font-size: 40px;
+    }
   }
+}
 }
