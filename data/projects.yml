@@ -16,14 +16,14 @@
   data_anchor: buddyup
   index: 2
 
-- name: Portfolio
-  description: "- Work in progress -"
-  context: I'm currently working on my portfolio. I'm using it as a way to learn new technologies and to improve my skills.
-  stacks: [ruby, middleman, html, css, javascript, sass, git, github, netlify, canva]
-  image: projects/placeholder.png
-  url: https://www.google.com
-  data_anchor: portfolio
-  index: 3
+# - name: Portfolio
+#   description: "- Work in progress -"
+#   context: I'm currently working on my portfolio. I'm using it as a way to learn new technologies and to improve my skills.
+#   stacks: [ruby, middleman, html, css, javascript, sass, git, github, netlify, canva]
+#   image: projects/placeholder.png
+#   url: https://www.google.com
+#   data_anchor: portfolio
+#   index: 3
 
 # - name: Recipe Cookbook
 #   description: "Where I want to show my front-end"
